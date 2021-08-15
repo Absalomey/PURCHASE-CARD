@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./images/pattern-background-desktop.svg") hsl(225, 100%, 94%)
+    top no-repeat;
+  background-size: contain;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card {
+  width: 450px;
+  height: 695px;
+  background: #fff;
+  border-radius: 25px;
+}
+
+.card__header {
+  height: 220px;
+  width: 100%;
+  background: url("./images/illustration-hero.svg") top no-repeat;
+  background-clip: content-box;
+  border-radius: 25px 25px 0 0;
+}
+
+.card__body {
+  height: 475px;
+  padding: 0 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card___body__title {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.card__body__content {
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+}
+
+.card__body__plan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 15px;
+  width: 100%;
+  padding: 25px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+}
+
+.card__body__plan__icon {
+  width: 50px;
+  height: 50px;
+  background: url("./images/icon-music.svg") no-repeat center;
+}
+
+.card__body__plan__description {
+  color: hsl(224, 23%, 55%);
+}
+
+.card__body__plan__description__title {
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+
+.card__body__plan__change {
+  margin-left: auto;
+}
+
+.card__body__plan__change a {
+  color: hsl(245, 75%, 52%);
+  cursor: pointer;
+}
+.card__body__plan__change a:hover {
+  color: hsl(243, 78%, 68%);
+  text-decoration: none;
+}
+.card__body__plan__change a:visited {
+  color: hsl(245, 75%, 52%);
+}
+
+.card__body__cta {
+  width: 100%;
+}
+.card__body__cta button {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.card__body__cta__proceed {
+  background: hsl(245, 75%, 52%);
+  color: white;
+  box-shadow: 0 15px 10px hsl(225, 100%, 94%);
+}
+.card__body__cta__proceed:hover {
+  background: hsl(243, 78%, 68%);
+}
+
+.card__body__cta__cancel {
+  background: none;
+  padding: 20px;
+  padding: 0px;
+  color: hsl(224, 23%, 55%);
+}
+.card__body__cta__cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
